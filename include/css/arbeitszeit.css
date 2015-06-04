@@ -1,0 +1,22 @@
+#Zeiterfassungdetail {
+    display: none;
+}
+.zeiterfassungseintrag {
+    cursor: pointer;
+}
+#Chart-total {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+#Zeiterfassung td, #Zeiterfassung th {
+    width: 33.3%;
+    text-align: center;
+}
+#Zeiterfassung-gesamt, #Zeiterfassung-monat {
+    font-weight: bold;
+}
+#Zeiterfassung-gesamt[data-negativ="1"], #Zeiterfassung-monat[data-negativ="1"] {
+    color: rgb(255,0,0);
+}

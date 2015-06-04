@@ -1,0 +1,82 @@
+#MitarbeiterInfo {
+    display: none;
+    opacity: 0;
+}
+#Mitarbeiterinfos {
+  padding: 2px;
+}
+.mitarbeiterZeile {
+  cursor: pointer;
+}
+.mitarbeiterZeile:hover {
+  background-color: #e7e7e7;
+}
+.mitarbeiterZeile:active, .mitarbeiterZeile.active {
+  background-color: #8c8c8c;
+}
+.Mitarbeiter-Bild {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 150px;
+  border: 1px solid #ddd;
+  background-image: url('../images/Mitarbeiter-na.png');
+  float: right;
+}
+.Mitarbeiter-Bild[data-geschlecht="m"] {
+  background-image: url('../images/Mitarbeiter-m.png');
+}
+.Mitarbeiter-Bild[data-geschlecht="w"] {
+  background-image: url('../images/Mitarbeiter-w.png');
+}
+#Mitarbeiter-Straße, #Mitarbeiter-Ort {
+    cursor: pointer; /* Google Maps */
+}
+#MitarbeiterInfosTabelle {
+  width: calc(100% - 150px);
+  border-right: 1px solid #ddd;
+  margin: 0px;
+}
+@media (max-width: 550px){
+    .Mitarbeiter-Bild {
+        width: 25%;
+    }
+    #MitarbeiterInfosTabelle {
+        width: 75%;
+        word-break: break-all;
+    }
+}
+#MitarbeiterInfosTabelle th {
+  width: 40%;
+}
+#Mitarbeiter-Zeitkonto {
+    cursor: pointer;
+}
+#addNewUser, #AttributeBearbeiten {
+  float: right;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+#newUserPopup .input-group-addon {
+  width: 200px;
+  text-align: right;
+}
+#newUserPopup .input-group {
+  width: 100%;
+  margin-bottom: 5px;
+}
+#newUserPopup .alert-danger, #newUserPopup .alert-success  {
+    display: none;
+}
+.MitarbeiterInfoAdmin {
+    display: none;
+}
+#toggleSensibleDaten {
+    cursor: pointer;
+}
+#toggleSensibleDaten:hover {
+    background-color: #e7e7e7;
+}
+.AdminZeitkontoUebersicht[data-negativ="1"] {
+    color: red;
+}
